@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon site vidéo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#video">Vidéo</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Nom du Site</h1>
+  </header>
+  
+  <main>
+    <section id="accueil" class="fade-in">
+      <h2>Bienvenue</h2>
+      <p>Texte d’introduction…</p>
+    </section>
+    
+    <section id="video" class="fade-in">
+      <h2>Vidéo Présentation</h2>
+      <div class="video-container">
+        <video controls src="video.mp4"></video>
+      </div>
+    </section>
+    
+    <section id="apropos" class="fade-in">
+      <h2>À propos</h2>
+      <p>Description de ton projet…</p>
+    </section>
+    
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Votre nom">
+        <input type="email" placeholder="Votre email">
+        <textarea placeholder="Votre message"></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 Ton nom ou projet</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
