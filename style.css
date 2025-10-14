@@ -1,0 +1,128 @@
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(90deg, #222 60%, #444 100%);
+  color: #fff;
+  padding: 32px 0 10px 0;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 16px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #ff9800;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: width 0.4s cubic-bezier(.64,1.52,.53,.73);
+}
+
+nav a:hover {
+  color: #ff9800;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+main {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+section {
+  margin-bottom: 56px;
+}
+
+/* Animation fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s cubic-bezier(.64,1.52,.53,.73), transform 0.9s cubic-bezier(.64,1.52,.53,.73);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.video-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  background: #000;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 12px;
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #222;
+}
+
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 40px;
+}
